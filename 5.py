@@ -8,7 +8,9 @@ a=9-3 = 6, b=3
 a=6-3 = 3, b=3
 Therefore, both a and b is having the same result so we can return any value a or b
 """
-    
+
+#Euclidean Algorithm
+''' 
 def gcd(a, b):
     while a != b:
         if a > b:
@@ -20,3 +22,14 @@ if __name__ == '__main__':
     a = 12
     b = 15
     print("The GCD is: " + str(gcd(a,b)))
+'''
+
+# Optimized Euclidean Algorithm
+def gcd(a,b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+if __name__ == '__main__':
+    a = 12
+    b = 15
+    print(gcd(a, b))
