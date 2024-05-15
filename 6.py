@@ -1,4 +1,6 @@
 # LCM of two numbers
+# Formula for finding LCM = a * b = gcd(a, b) * lcm(a, b)
+
 def gcd(a,b):
     if b == 0:
         return a
